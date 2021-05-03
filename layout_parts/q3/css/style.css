@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-table {
+.main-table {
   table-layout: auto;
   width: 100%;
   text-align: center;

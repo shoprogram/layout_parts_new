@@ -1,5 +1,79 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
 /* 回答はここに書いてね */
+/* 1 */
+/* 何故かwidthが+20され表示される3・4でも同じ現象 */
+.float-text{
+  width: 205px;
+  float: left;
+  word-wrap: break-word;
+}
+.float-text:last-child {
+  margin-left: 50px;
+}
+
+/* 2 */
+.table-wrap {
+  display: table;
+}
+.table-content {
+  display: table-cell;
+  width: 225px;
+  vertical-align: middle;
+}
+.table-content:last-child {
+  padding-left: 50px;
+}
+.table-text {
+  word-wrap: normal;
+}
+
+/* 3 */
+/* inline-blockで横並びにするとも自分のスペースが生まれる。
+解決策としてHTMLで要素を続けて書く(改行しない)とスペースは消える。
+しかし、見栄えが悪くなるので、他の方法でスペースを潰したい。
+(font-size:0;やletter-spacingマイナス値設定でもできるがテキスト全てに反映されてしまう。) */
+.inline-text {
+  width: 205px;
+  display: inline-block;
+  vertical-align: middle;
+  word-wrap: break-word;
+}
+.inline-text:last-child {
+  margin-left: 50px;
+}
+
+/* 4 */
+.flex-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.flex-text {
+  width: 205px;
+}
+
+/* 5 */
+.final-content {
+  /* width: 100%; */
+  /* display: flex; */
+  /* display: table; */
+  /* margin-left: -200px; */
+  display: inline-block;
+}
+.final-text {
+  /* display: table-cell; */
+}
+.final-text:first-child {
+  width: 280px;
+  margin-left: -50px;
+}
+.final-text:last-child {
+  margin-left: 50px;
+}

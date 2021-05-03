@@ -7,6 +7,8 @@
   clear: both;
 }
 /* 回答はここに書いてね */
+
+/* どこでfirst-chiledを使うべきなのかわからない */
 .text-wrapper {
   margin: 0 auto;
   width: 940px;

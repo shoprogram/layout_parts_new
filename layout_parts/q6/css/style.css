@@ -3,3 +3,72 @@
 /* 回答はここに書いてね */
 
 /* 回答はここに書いてね */
+.align-content{
+  text-align: center;
+}
+/* .margin-content{
+  margin: 0 auto;
+} */
+.align-text {
+  background-color: #e6f2ff;
+  width: 90px;
+  padding: 10px 0;
+  text-align: center;
+  display: inline-block;
+}
+.margin-text {
+  background-color: #e6f2ff;
+  width: 90px;
+  padding: 10px 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+.table-wrap {
+  display: table;
+}
+.table-content {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.table-text {
+  display: inline-block;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.flex-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-text {
+  background-color: #fff;
+  padding: 10px;
+}
+
+
+.stable-content {
+ position: relative;
+}
+.stable-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.flexible-content {
+  position: relative;
+}
+.flexible-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* 要素の左上が支点になっているため、要素の半分ずつ戻すことでど真ん中にくる */
+  transform: translate(-50%, -50%);
+  /* -webkit-transform: translate(-50%, -50%); */
+}

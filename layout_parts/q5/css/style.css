@@ -9,110 +9,59 @@
   position: relative;
 }
 /* 回答はここに書いてね */
-.square:nth-child(3) {
+.square {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
+  position: absolute;
   line-height: 100px;
   width: 100px;
   height: 100px;
+}
+.square:nth-child(3) {
   background-color: #ffefd3;
-  position: absolute;
   top: 40px;
   left: 200px;
+  z-index: 1;
 }
 .square:nth-child(7) {
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 100px;
-  width: 100px;
-  height: 100px;
   background-color: #7084de;
-  text-align: center;
-  position: absolute;
   top: 120px;
   left: 280px;
+  z-index: 2;
 }
 .square:nth-child(8) {
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 100px;
-  width: 100px;
-  height: 100px;
   background-color: #d0ecea;
-  text-align: center;
-  position: absolute;
   top: 200px;
   left: 360px;
+  z-index: 3;
 }
 .square:nth-child(5) {
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 100px;
-  width: 100px;
-  height: 100px;
   background-color: #8b7a5e;
-  text-align: center;
-  position: absolute;
   top: 280px;
   left: 280px;
   z-index: 4;
 }
 .square:nth-child(2) {
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 100px;
-  width: 100px;
-  height: 100px;
   background-color: #9fd6d2;
-  text-align: center;
-  position: absolute;
   top: 360px;
   left: 200px;
   z-index: 5;
 }
 .square:nth-child(6) {
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 100px;
-  width: 100px;
-  height: 100px;
   background-color: #fffee4;
-  text-align: center;
-  position: absolute;
   top: 280px;
   left: 120px;
   z-index: 6;
 }
 .square:nth-child(4) {
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 100px;
-  width: 100px;
-  height: 100px;
   background-color: #deae70;
-  text-align: center;
-  position: absolute;
   top: 200px;
   left: 40px;
   z-index: 7;
 }
 .square:nth-child(1) {
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 100px;
-  width: 100px;
-  height: 100px;
   background-color: #de70cf;
-  text-align: center;
-  position: absolute;
   top: 120px;
   left: 120px;
   z-index: 8;
@@ -122,17 +71,10 @@
   width: 20px;
   height: 20px;
   background-color:#ffefd3;
-  position: absolute;
   right: 0;
   z-index: 9;
 }
 .square:nth-child(9) {
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 100px;
-  width: 100px;
-  height: 100px;
   background-color: #2b69a3;
   text-align: center;
   position: fixed;
