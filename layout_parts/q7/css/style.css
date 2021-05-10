@@ -61,19 +61,11 @@
 
 /* 5 */
 .flexible-content {
-  /* width: 100%; */
+  width: 100%;
   display: inline-block;
   padding-left: 350px;
   width: 100%;
 }
-.final-text-left {
-  width: 280px;
-  margin: 0;
-  /* margin-left: -50px; */
-}
-.final-text-right{
-  /* margin-left: 50px; */
- 
-}
+
 
 /* q7最終問題が解けない */

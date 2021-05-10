@@ -25,13 +25,13 @@
   line-height: 22px;
   font-size: 16px;
 }
-.main-table tr:nth-child(2) {
+.main-table tr:nth-child(even) {
   background-color: #ecf1f2;
 }
 .main-table tr:nth-child(4) {
   background-color: #ecf1f2;
 }
-.main-table tr:nth-child(5) {
+.main-table tbody tr:last-child {
   border-top: dashed #000 2px;
 }
 
