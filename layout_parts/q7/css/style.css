@@ -60,20 +60,20 @@
 }
 
 /* 5 */
-.final-content {
+.flexible-content {
   /* width: 100%; */
-  /* display: flex; */
-  /* display: table; */
-  /* margin-left: -200px; */
   display: inline-block;
+  padding-left: 350px;
+  width: 100%;
 }
-.final-text {
-  /* display: table-cell; */
-}
-.final-text:first-child {
+.final-text-left {
   width: 280px;
-  margin-left: -50px;
+  margin: 0;
+  /* margin-left: -50px; */
 }
-.final-text:last-child {
-  margin-left: 50px;
+.final-text-right{
+  /* margin-left: 50px; */
+ 
 }
+
+/* q7最終問題が解けない */

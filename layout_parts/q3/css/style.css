@@ -2,14 +2,14 @@
 
 /* 回答はここに書いてね */
 .main-table {
-  table-layout: auto;
+  table-layout: fixed;
   width: 100%;
   text-align: center;
   border: solid #dedede 1px;
 }
 /* 回答はここに書いてね */
 
-th {
+.main-table th {
   padding: 10px;
   line-height: 26px;
   font-size: 18px;
@@ -17,21 +17,21 @@ th {
   color: white;
   border: solid #dedede 1px;
 }
-tr {
+.main-table tr {
   border: solid #dedede 1px;
 }
-td {
+.main-table td {
   border: solid #dedede 1px;
   line-height: 22px;
   font-size: 16px;
 }
-tr:nth-child(2) {
+.main-table tr:nth-child(2) {
   background-color: #ecf1f2;
 }
-tr:nth-child(4) {
+.main-table tr:nth-child(4) {
   background-color: #ecf1f2;
 }
-tr:nth-child(5) {
+.main-table tr:nth-child(5) {
   border-top: dashed #000 2px;
 }
 

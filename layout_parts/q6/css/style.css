@@ -6,9 +6,7 @@
 .align-content{
   text-align: center;
 }
-/* .margin-content{
-  margin: 0 auto;
-} */
+
 .align-text {
   background-color: #e6f2ff;
   width: 90px;
@@ -16,6 +14,7 @@
   text-align: center;
   display: inline-block;
 }
+
 .margin-text {
   background-color: #e6f2ff;
   width: 90px;
@@ -24,15 +23,16 @@
   margin: 0 auto;
 }
 
-
 .table-wrap {
   display: table;
 }
+
 .table-content {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
 }
+
 .table-text {
   display: inline-block;
   background-color: #fff;
@@ -44,15 +44,16 @@
   align-items: center;
   justify-content: center;
 }
+
 .flex-text {
   background-color: #fff;
   padding: 10px;
 }
 
-
 .stable-content {
- position: relative;
+  position: relative;
 }
+
 .stable-text {
   position: absolute;
   top: 0;
@@ -61,9 +62,11 @@
   left: 0;
   margin: auto;
 }
+
 .flexible-content {
   position: relative;
 }
+
 .flexible-text {
   position: absolute;
   top: 50%;
