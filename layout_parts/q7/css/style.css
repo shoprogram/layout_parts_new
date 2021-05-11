@@ -37,8 +37,7 @@
 }
 
 .table-content:last-child {
-  display: block;
-  margin-left: 50px;
+  padding-left: 50px;
 }
 
 .table-text {
@@ -52,7 +51,11 @@
 しかし、見栄えが悪くなるので、他の方法でスペースを潰したい。
 (font-size:0;やletter-spacingマイナス値設定でもできるがテキスト全てに反映されてしまう。) */
 
+.inline-content {
+  font-size: 0;
+}
 .inline-text {
+  font-size: 16px;
   width: 205px;
   display: inline-block;
   vertical-align: middle;
@@ -76,15 +79,22 @@
 }
 
 /* 5 */
+.inline-wrap {
+  font-size: 0;
+}
+
 .stable-content {
   display: inline-block;
   width: 300px;
+  font-size: 16px;
 }
 
 .flexible-content {
   display: inline-block;
   width: 100%;
-  /* margin-left: -300px; */
+  margin-left: -300px;
   padding-left: 350px;
   box-sizing: border-box;
+  font-size: 16px;
+  vertical-align: top;
 }

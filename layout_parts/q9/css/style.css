@@ -29,7 +29,7 @@
 }
 
 .comment::after {
-  border-top-color: white;
+  border-top-color: #fff;
   bottom: -38px;
   left: 30px;
 }
