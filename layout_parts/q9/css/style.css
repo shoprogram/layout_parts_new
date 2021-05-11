@@ -3,3 +3,33 @@
 /* 回答はここに書いてね */
 
 /* 回答はここに書いてね */
+.comment  {
+  position: relative;
+  margin: 0 auto;
+  width: 500px;
+  border: 5px solid #222;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.comment::before, .comment::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+}
+
+.comment::before {
+  border-top-color: #222;
+  bottom: -45px;
+  left: 30px;
+}
+
+.comment::after {
+  border-top-color: white;
+  bottom: -38px;
+  left: 30px;
+}

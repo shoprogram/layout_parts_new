@@ -4,29 +4,67 @@
 
 /* 回答はここに書いてね */
 
-.img-content {
+/* 1 */
+.car-content {
   margin: 0 auto;
   width: 500px;
   height: 333px;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
+  cursor: pointer;
 }
+
+.car-img {
+  transition: all 0.5s;
+}
+
+.text-content {
+  position: absolute;
+  word-break: break-all;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+  width: 100%;
+  height: 100%;
+  bottom: -100%;
+  transition: all 0.5s;
+}
+
 .car-text {
   position: absolute;
-  top:  100%;
+  bottom: 0;
   padding: 20px;
+  width: 100%;
   margin: 0 auto;
   z-index: 2;
-  word-wrap: break-word;
-  color: black;
+  color: white;
+  box-sizing: border-box;
 }
-.img-content:hover {
-  cursor: pointer;
-  /* transform: scale(1.5); */
-  /* background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,8)); */
+
+.car-content:hover .car-img {
+  transform: scale(1.5);
 }
-.img-content:hover .car-text {
-  position: absolute;
-  top: 0%;
-  transition: all 0.5s ;
+
+.car-content:hover .text-content {
+  bottom: 0;
+}
+
+/* 2 */
+@keyframes loadingAnimation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.circle {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  border: 10px solid #ecf1f2;
+  border-radius: 50%;
+  border-top-color: #00bcd4;
+  animation-name: loadingAnimation;
+  animation-duration: 1.1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
